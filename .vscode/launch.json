@@ -9,11 +9,11 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "externalTerminal",
+            "console": "integratedTerminal",
             "justMyCode": true
         },
         {
-            "name": "gcc.exe - 生成和调试活动文件",
+            "name": "g++.exe - 生成和调试活动文件",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -21,7 +21,7 @@
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false,
             "MIMode": "gdb",
             "miDebuggerPath": "D:\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
@@ -36,7 +36,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc.exe 生成活动文件"
+            "preLaunchTask": "C/C++: g++.exe 生成活动文件"
         }
     ]
 }

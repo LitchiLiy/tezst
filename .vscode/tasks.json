@@ -2,15 +2,14 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc.exe 生成活动文件",
-            "command": "D:\\mingw64\\bin\\gcc.exe",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "D:\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
-                "-fexec-charset=GBK" //虽然报错，但是能显示中文能用
             ],
             "options": {
                 "cwd": "${fileDirname}"
